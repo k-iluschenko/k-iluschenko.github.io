@@ -340,7 +340,10 @@ h4 {
   margin-bottom: 16px;
 }
 
-.blog-title {margin-left: -1px;}
+.blog-title {
+	margin-left: -1px;
+	cursor: pointer;
+	}
 
 .blog-date {
   font-family: "Cambria", sans-serif;
@@ -413,7 +416,7 @@ h4 {
   cursor: pointer;
   display: block;
   float: left;
-  width: 32.5%;
+  width: 33.3%;
   height: 42px;
   line-height: 42px;
   position: relative;
@@ -423,7 +426,7 @@ h4 {
   font-size: 17px;
   font-family: "Cambria Math", sans-serif;
   text-shadow: 0 -1px 1px #000;
-  border-bottom: 2px solid #257386;
+  /* border-bottom: 2px solid #257386; */
   letter-spacing: 0.05em; 
 }
 
@@ -432,6 +435,7 @@ h4 {
 .comments-tabs input {
   position: absolute;
   left: -9999px;
+   width: 33.3%;
 }
 
 #tab_1:checked  ~ #tab_l1,
@@ -440,30 +444,31 @@ h4 {
   top: 0;
   z-index: 3;
   background: rgba(0,0,0,0);
-  width: 35%;
-  padding-top: 3px ;
+  width: 33.3%;
 }
 
 #tab_1:checked  ~ #tab_l1,
-.comments-tabs label:first-of-type {border-top-left-radius:5px;}
+.comments-tabs label:first-of-type {
+	border-top-left-radius:5px;	
+}
 
 #tab_3:checked  ~ #tab_l3,
 .comments-tabs label:last-of-type {border-top-right-radius:5px;}
 
-.comments-tabs label:nth-of-type(2) {padding-left: 14px;}
-
 #tab_1:checked  ~ #tab_l1{
-  border-right: 2px solid #257386;
+   border-right: 2px solid #257386; 
+   padding-left: 2px;
   border-bottom: none;
 }
 #tab_2:checked  ~ #tab_l2{
   border-bottom: none;
-  border-right: 2px solid #257386;
-  border-left: 2px solid #257386;
+   border-right: 2px solid #257386;
+ border-left: 2px solid #257386; 
 }
 
 #tab_3:checked  ~ #tab_l3 {
-  border-left: 2px solid #257386;
+   border-left: 2px solid #257386; 
+   padding-right: 2px;
   border-bottom: none;
 }
 
